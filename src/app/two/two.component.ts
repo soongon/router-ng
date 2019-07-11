@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoComponent implements OnInit {
 
+  today: Date;
+  money: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.today = new Date();
+    this.money = 12525000;
   }
 
 }

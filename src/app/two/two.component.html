@@ -1,1 +1,20 @@
 <p>two works!</p>
+
+
+<h3>{{'hello world' | shorten}}</h3>
+
+<hr/>
+
+<h2>{{today}}</h2>
+<h2>{{today | date}}</h2>
+<h2>{{today | date:'y년 MM월 dd일 HH시 dd일 mm분' | shorten }}</h2>
+<h2>{{today | date:'yyyy/MM/dd EEEE HH:mm:ss' }}</h2>
+
+<!-- 2019/07/20 목요일 18:25:15 -->
+
+<hr/>
+
+<h3>{{money | currency}}</h3>
+<h3>{{money | currency:'KRW':'code'}}</h3>
+<h3>{{money | currency:'KRW':'symbol-narrow'}}</h3>
+<h3>{{money}}</h3>
