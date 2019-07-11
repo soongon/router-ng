@@ -9,6 +9,8 @@ import {Router} from '@angular/router';
 export class AppComponent {
   title = 'router-ng';
 
+  userId = '3';
+
   constructor(private router: Router) {}
 
   goTwo() {
