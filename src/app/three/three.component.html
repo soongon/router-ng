@@ -1,1 +1,9 @@
 <p>three works!</p>
+
+<ul>
+  <li *ngFor="let post of posts | async">
+    {{post.id}} : {{post.name}} ::: {{post.email}}
+  </li>
+</ul>
+
+<button (click)="addItem()">data 추가</button>

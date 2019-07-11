@@ -9,6 +9,9 @@ import { ThreeComponent } from './three/three.component';
 import { FourComponent } from './four/four.component';
 import {ShortenPipe} from '../pipes/shorten.pipe';
 import {FormsModule} from '@angular/forms';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFirestore} from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -22,10 +25,12 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(
+      environment.firebase, 'angular-kim')
   ],
   providers: [
-
+    AngularFirestore
   ],
   bootstrap: [AppComponent]
 })

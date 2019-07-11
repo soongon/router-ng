@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyBnTo57zE74IxDNyMBKxv02bBsDHuHz1MU',
+    authDomain: 'angular-kim.firebaseapp.com',
+    databaseURL: 'https://angular-kim.firebaseio.com',
+    projectId: 'angular-kim',
+    storageBucket: '',
+    messagingSenderId: '991964872915',
+    appId: '1:991964872915:web:5949accb6b8cbc4f'
+  }
 };
 
 /*
