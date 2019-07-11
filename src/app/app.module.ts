@@ -8,6 +8,7 @@ import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
 import { FourComponent } from './four/four.component';
 import {ShortenPipe} from '../pipes/shorten.pipe';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ShortenPipe} from '../pipes/shorten.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
 
